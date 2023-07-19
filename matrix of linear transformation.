@@ -1,0 +1,17 @@
+from sympy import*
+var ('x,y,a,b') 
+T=lambda x: [2*x[0]+3*x[1], 4*x[0]-5**[1]] 
+X= [X,Y] 
+print ("Given Transformation I (x, y) = ",T(x)) v1 [1,0]; v2=[0,1]
+u1=[1,0]; u2=[0,1]
+v1=[1,0]; v2=[0,1]
+B1=[u1,u2]
+B2=[v1,v2]
+m=n=2
+A=zeros(n,m)
+for i in range (0,m):
+eq=Matrix ([v1, v2, T (B1 [i])]).T
+soln=solve_linear_system (eq,a,b)
+A[:,i]=Matrix ( [soln [a], soln [b]])
+print ("\nAssociated Matrix of Linear Transformation:" )
+pprint (A)
