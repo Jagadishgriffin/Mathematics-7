@@ -1,4 +1,4 @@
-from sympy import"
+from sympy import*
 v1=[1,1,-1]
 v2=[2,-3,5]
 v3=[2,-1,4] 
@@ -6,6 +6,6 @@ A=Matrix ([v1, v2, v3])
 D=A.det ()
 print ("Determinant = ", D)
 if D!=0:
-print ("Given vectors form basis of R^3")
+   print ("Given vectors form basis of R^3")
 else:
-print ("Given vectors doesnot form a basis of R^3")
+   print ("Given vectors doesnot form a basis of R^3")
