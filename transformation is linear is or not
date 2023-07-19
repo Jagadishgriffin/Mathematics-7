@@ -1,0 +1,16 @@
+from sympy import*
+from operator import add
+var ('x,y')
+var ('x1, x2,y1, y2, c')
+T=lambda x:[x[0]+x[1],x[1]]
+x=(x,y)
+print ("Given Transformation T(x, y) = ",T(x))
+x=[x1,y1]; Y=[x2,y2]
+L1=T(list(map (add, x, Y)))
+R1=list(map(add, T (x),T(Y)))
+L2=T (list (map (lambda x: c*x, x))) 
+R2=list (map (lambda x: expand (c*x),T(x)))
+if L1==R1 and L2==R2:
+       print ("T is Linear Transformation")
+else:
+   print ("T is not a linear transformation")
