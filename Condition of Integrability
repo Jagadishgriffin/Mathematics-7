@@ -1,11 +1,12 @@
 from sympy import*
-var (x, y, z)
+var('x,y,z')
 P=y*z+2*z
 Q=z*x-2*z
 R=x*y-2*y
-print ("Given differential equation: ") print (f" ((P)) dx+ ((Q)) dy+ ((R)) dz")
-lhs=simplify (P* (diff (Q, z)-diff (R, y))+Q (diff (R, x)-diff (P, z))+R* (diff (P, y)-diff (Q,x)))
+print("Given differential equation : ")
+print(f" ((P))dx+ ((Q))dy+ ((R))dz")
+lhs=simplify(P*diff(Q,z)-diff(R,y))+Q*(diff(R,x)-diff(P,z))+R*(diff(P,y)-diff(Q,x))
 if lhs==0:
-print ("Condition for integrability satisfied")
+    print ("Condition for integrability not satisfied")
 else:
-print ("Condition for integrability not satisfied")
+    print ("Condition for integrability  satisfied")
