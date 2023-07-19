@@ -1,0 +1,21 @@
+from sympy import*
+var ('D, D1, x,y,m, c') 
+F=D**2-D D1-2*D1**2
+f=exp (x+2*y)
+F=Poly (F.subs ([ (D, m), (D1, 1)]))
+r=F.all_roots (multiple=True) 
+m1=r[0]; m2=r[1]
+print ("The roots are= ", m1, and, m2)
+f=f.subs (y, c-m1*x)
+f=integrate (f, x)
+f=f.subs (c, y+m1*x) 
+f=f.subs (y, c-m2*x)
+f=integrate (f, x) 
+f=f.subs (c, y+m2*x)
+PI=simplify (f)
+print("Particula Integral"); pprint (PI)
+print ("Complete solution is: ") 
+if r[0]=[1]: 
+pprint (f"f(y+ (m1)x+xg (y+ (m2)x) + (PI)")
+else:
+pprint (f"f(y + (m1) x+g (y+ (m2)x) + {FI}")
