@@ -7,7 +7,7 @@ v=[0,0,0]
 A=Matrix ([v1, v2, v3, v]).T
 soln=solve_linear_system (A, a, b, c)
 print ("scalars are: ", soln)
-if soln[a]=0 and soln [b]==0 and soln [c]==0 :
-print ("Given vectors linearly independent")
+if soln[a]==0 and soln [b]==0 and soln [c]==0 :
+   print ("Given vectors linearly independent")
 else:
-print (" Given vectors linearly dependent")
+   print (" Given vectors linearly dependent")
