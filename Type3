@@ -1,13 +1,13 @@
 from sympy import *
-var ('x,y,p,q,a,u,eg')
+var ('x,y,p,q,a,u')
 z=Function ('z') (u)
 eq=Eq (p*(1+q), q*z)
 print ("Given PDE: ")
-pprint (eg)
+pprint (eq)
 zu=z.diff (u) 
 eq=eq.subs ([ (p, zu), (q, a*zu) ]) 
 h=solve (eq, zu)
 print ("The required solns: ")
 for i in range (0,len (h)): 
-soln=dsolve (Eq (zu, h[i]),z)
-pprint (soln)
+    soln=dsolve (Eq (zu, h[i]),z)
+    pprint (soln)
