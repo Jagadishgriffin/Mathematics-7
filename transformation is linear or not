@@ -11,6 +11,6 @@ R1=list(map(add, T (x),T(Y)))
 L2=T (list (map (lambda x: c*x, x))) 
 R2=list (map (lambda x: expand (c*x),T(x)))
 if L1==R1 and L2==R2:
-       print ("T is Linear Transformation")
+   print ("T is Linear Transformation")
 else:
    print ("T is not a linear transformation")
