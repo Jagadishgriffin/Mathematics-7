@@ -1,6 +1,6 @@
 from sympy import*
 var ('D, D1, x,y,m, c') 
-F=D**2-D-D1-2*D1**2
+F=D**2-D*D1-2*D1**2
 f=exp (x+2*y)
 F=Poly (F.subs ([ (D, m), (D1, 1)]))
 r=F.all_roots (multiple=True) 
