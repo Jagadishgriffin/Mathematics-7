@@ -1,5 +1,5 @@
 from sympy import *
-var ('x,y,p,q,a,u')
+var ('x,y,p,q,a,u,eg')
 z=Function ('z') (u)
 eq=Eq (p*(1+q), q*z)
 print ("Given PDE: ")
